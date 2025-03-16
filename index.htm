@@ -9,87 +9,89 @@
         body {
             overflow-x: hidden;
         }
-        .imgContainer{
-            height: 200px;
-            width: 120px;
-        }
-        .book-1 {
-            margin-top:0px ;
+        .imgContainer {
             height: 280px;
             width: 170px;
+            perspective: 1000px; /* Add perspective for 3D effect */
+            position: relative;
+        }
+        .book-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+            transform-style: preserve-3d; /* Preserve 3D transformations */
+        }
+        .imgContainer:hover .book-card {
+            transform: rotateY(180deg);
+        }
+        .book-front, .book-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide the back face when rotated */
+        }
+        .book-front {
+            z-index: 2;
+        }
+        .book-back {
+            background-color: grey;
+            transform: rotateY(180deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+        }
+        .book-img {
+            height: 100%;
+            width: 100%;
             object-fit: cover;
-            position: absolute;
-            transition: transform 2s, opacity 2s; /* Transition for both transform and opacity */
-        }
-        #moreDetails{
-            height: 280px;
-            width: 170px;
-            position: absolute;
-            opacity: 0;
-            transform: rotateY(180deg);
-            transition: transform 2s, opacity 3s; /* Transition for both transform and opacity */
-        }
-        .imgContainer:hover{
-            #moreDetails{
-            color: white;
-            cursor: pointer;
-            opacity: 1;
-            background-color: grey;
-            transform: rotateY(0deg);
-           } 
-           .book-1 {
-            cursor: pointer;
-            transform: rotateY(180deg);
-            opacity: 0;
-           }
-        }
-        .imgContainer:hover::after{
-            #moreDetails{
-            color: white;
-            cursor: pointer;
-            opacity: 0;
-            background-color: grey;
-            transform: rotateY(180deg);
-           } 
-           .book-1 {
-            cursor: pointer;
-            transform: rotateY(0deg);
-            opacity: 1;
-           }
         }
     </style>
 </head>
-<body class="container-fluid p-0 m-0" >
-        <!-- Header -->
-        <h2 id="landingPage" class="mt-1 mb-0 py-2 text-center bg-dark text-white">Welcome to Book Showcase</h2>
-        
-        <!-- Book Section -->
-        <div id="home" class="text-left ms-3 mt-4">
-            <h4>Explore Books</h4>
-            <div class="row justify-content-evenly mt-1" style="height:400px; position: relative;" id="books">
-                <!-- BOOK 1 -->
-                <a href="../book1.htm" class="imgContainer col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center" id="1" value="bookOne" onclick="books()">
-                    <img class="book-1 book-img-1" src="..\public\images\andThenThereWereNone.jpg" alt="Book1">
-                    <div id="moreDetails">
-                        <span class="d-inline-block pt-5 ps-4 fw-bold text-white" style="font-size: 40px;">Click for Details</span>
+<body class="container-fluid p-0 m-0">
+    <!-- Header -->
+    <h2 id="landingPage" class="mt-1 mb-0 py-2 text-center bg-dark text-white">Welcome to Book Showcase</h2>
+            
+    <!-- Book Section -->
+    <div id="home" class="text-left ms-3 mt-4">
+        <h4>Explore Books</h4>
+        <div class="row justify-content-evenly mt-1" style="height:400px;" id="books">
+            <!-- BOOK 1 -->
+            <div class="imgContainer col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center" id="1">
+                <a href="../book1.htm" class="book-card" onclick="books()">
+                    <div class="book-front">
+                        <img class="book-img" src="..\public\images\andThenThereWereNone.jpg" alt="Book1">
+                    </div>
+                    <div class="book-back">
+                        <span class="fw-bold text-white">Click for Details</span>
                     </div>
                 </a>
-                <!-- BOOK 2 -->
-                <a href="../book2.htm" class="imgContainer col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center"  id="2" onclick="books()"> 
-                    <img class="book-1 book-img-2" src="..\public\images\theMazeRunner.jpg" alt="Book2" >
-                    <div id="moreDetails">
-                        <span class="d-inline-block pt-5 ps-4 fw-bold text-white" style="font-size: 40px;">Click for Details</span>
+            </div>
+            <!-- BOOK 2 -->
+            <div class="imgContainer col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center" id="2">
+                <a href="../book2.htm" class="book-card" onclick="books()">
+                    <div class="book-front">
+                        <img class="book-img" src="..\public\images\theMazeRunner.jpg" alt="Book2">
+                    </div>
+                    <div class="book-back">
+                        <span class="fw-bold text-white">Click for Details</span>
                     </div>
                 </a>
-                <!-- BOOK 3-->
-                <a href="../book3.htm" class="imgContainer col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center" id="3" onclick="books()">
-                    <img class="book-1 book-img-3" src="..\public\images\theMonsterCalls.jpg" alt="Book3">
-                    <div id="moreDetails">
-                        <span class="d-inline-block pt-5 ps-4 fw-bold text-white" style="font-size: 40px;">Click for Details</span>
+            </div>
+            <!-- BOOK 3 -->
+            <div class="imgContainer col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center" id="3">
+                <a href="../book3.htm" class="book-card" onclick="books()">
+                    <div class="book-front">
+                        <img class="book-img" src="..\public\images\theMonsterCalls.jpg" alt="Book3">
+                    </div>
+                    <div class="book-back">
+                        <span class="fw-bold text-white">Click for Details</span>
                     </div>
                 </a>
-            </div> 
-        </div>             
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-2 mb-1" >
