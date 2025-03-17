@@ -11,18 +11,10 @@
             background: linear-gradient(0deg, rgb(3, 3, 3),rgb(61, 61, 61), rgb(104, 104, 104));
         }
         .carousel-inner{
-            height: 100vh;
+            height: 90vh;
             width: 200vh;
         }
-        #bgColor{
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            background-attachment: fixed;
-            z-index: -1;
-            top:0;
-            left: 0;
-        }
+        
         #genre-section {
             display: flex;
             justify-content: center;
@@ -81,6 +73,17 @@
             max-width: 400px;   
             margin: auto;
         }
+        #bgColor{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            background-attachment: fixed;
+            position: fixed; 
+            z-index: -1;
+            top:0;
+            left: 0;
+        }
+       
     </style>
 </head>
 <body class="container-fluid p-0 m-0">
@@ -99,14 +102,6 @@
             </div>
             <div id="genre">   
                 <div id="book-genre" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#book-genre" data-bs-slide-to="0" class="active"></button>
-                      <button type="button" data-bs-target="#book-genre" data-bs-slide-to="1" ></button>
-                      <button type="button" data-bs-target="#book-genre" data-bs-slide-to="2" ></button>
-                      <button type="button" data-bs-target="#book-genre" data-bs-slide-to="3" ></button>
-                      <button type="button" data-bs-target="#book-genre" data-bs-slide-to="4" ></button>
-                      
-                    </div>
                     <div class="carousel-inner ps-5" >
                         <div class="carousel-item active pt-5">
                             <a href="">
@@ -200,11 +195,9 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#book-genre" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon"></span>
-                      <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#book-genre" data-bs-slide="next">
                       <span class="carousel-control-next-icon"></span>
-                      <span class="visually-hidden">Next</span>
                     </button>
                   </div>
             </div>
