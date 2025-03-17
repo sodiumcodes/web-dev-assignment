@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        #bookImg {
+            max-width: 90%;
+            height: 400px;
+            max-height: 400px;
+            object-fit: cover;
+            margin: auto;
+        }
+        body {
+            background: linear-gradient(180deg, #ffe100, #0b109b, #d60303, #000);
+            min-height: 100vh;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h2 id="navTitle" class="mt-1 mb-0 py-2 text-center bg-dark text-white">Fantasy Books Collection</h2>
+        <div id="navLink" class="mt-0 pe-5 py-1 text-end text-white" style="background-color: rgb(45, 45, 45);">
+            <a href="../index.htm" class="pe-3 text-white text-decoration-none">Home</a>
+            <a href="#feedbackForm" class="text-white text-decoration-none">Feedback Form</a>
+        </div>
+    </nav>
+
+    <!-- Book Cards -->
+    <div class="container my-5">
+        <div class="row g-4 justify-content-center">
+            <!-- Book 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQEZScLRzmnSzjO-PNWqIedp0tLBcjVNZ_JLQTxXYEEzSwp7HCLzQomF12E-8XzO3n985Ja3pthM7y80vcDxRh81l6x_T-M6EjTJDwVSVWQqlLxhmR-Ze8G" class="card-img mt-3" alt="The Hobbit" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">The Hobbit</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">J.R.R. Tolkien</dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A classic adventure about a hobbit’s journey to reclaim treasure. Bilbo Baggins faces trolls, goblins, and a dragon in his quest.</p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/Hobbit-J-R-R-Tolkien/dp/0007487304?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3H3WE9M6NY1KV" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipkart.com/the-hobbit/p/itmfbphp3gqhcfhv?pid=9780007487301&lid=LSTBOK9780007487301QJFIHK&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTns6PyqVRDCxWoDQQyH83Vm40aSilAqmCsV_u36DwICTHRNgnufvYOoOROZCdAN9af_dj6bBLeiaAW3B6XjsPtQfe30_PnkQ6W2rnddLE" class="card-img mt-3" alt="Harry Potter and the Sorcerer's Stone" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">Harry Potter and the Sorcerer's Stone</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">J.K. Rowling</dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A young boy discovers he is a wizard. Harry attends Hogwarts and uncovers the mystery behind the Sorcerer’s Stone.</p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/Harry-Potter-Sorcerers-Stone-Rowling/dp/0590353403?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1S46CEHK621UY" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipkart.com/harry-potter-sorcerer-s-stone-harry-potter-book-1/p/itm7b1f305c23ae5?pid=9781338878929&lid=LSTBOK9781338878929XZOWLK&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQqYKaL5sgwRzz9IXMBR-ctkjd6fGpmzLXzttJBVW7jZPiqKvBP4IcjAMTxp19l07NZ0keLIOZ89Txp52jM-FxL3aquaGlhNP9Z6cY2Kiv7" class="card-img mt-3" alt="Game of Thrones" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">Game of Thrones</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">George R.R. Martin </dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A political and magical epic set in a medieval world. Multiple families fight for control of the Iron Throne.
+                            </p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/Game-Thrones-Song-Ice-Fire/dp/0007428545?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3H3WE9M6NY1KV" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipkart.com/game-thrones-hbo-tie-in-edition/p/itm8e70e0f07689c?pid=9780553593716&lid=LSTBOK9780553593716WOUZRF&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRmZll8dCQU-wXDbv2ODCdH-U6zAxCmSMALebhwttq-sT5ceVdMqj3Q-alEOF_8TESlOUI8EpNWpARS2kFk6Jxp7FbjXyQq6TKpu1Tpd_fz" class="card-img mt-3" alt="Mistborn: The Final Empire" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">Mistborn: The Final Empire</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">Brandon Sanderson</dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A story about a rebellion against a magical tyrant. Vin, a young street thief, learns to wield powerful metal-based magic.</p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/MISTBORN-BOOK-1-FINAL-EMPIRE/dp/0575089911?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipkart.com/mistborn/p/itmf4hg2htdzgcyx?pid=9780575089914&lid=LSTBOK9780575089914DAGBH6&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQtyW86U2rA06jZqDV8uHOkhEwrGkMDnnNGIwJUdPUqcc9ej0U6NVSxgHqMq88Sc8RcBQ7KqNA_NcGIKh2NGjwxh4GSVgNvHMq13WpahBI" class="card-img mt-3" alt="American Gods" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">American Gods</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">Neil Gaiman</dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A modern fantasy about gods living among humans. Shadow Moon is drawn into a conflict between old gods and new.</p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/American-Gods-Old-Neil-Gaiman/dp/0755322819?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipkart.com/american-gods-tv-tie-in/p/itm739f8e569d812?pid=9780062689733&lid=LSTBOK9780062689733OCPYAN&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQgbXNK5Laj5KE182RyiNDuthMFTUm9BpJZ07lW3ktPJ4FmUGalFJfrda-ymn4lU86-uC1w5Nc48lpNeSEjYNSzWkNMox3j" class="card-img mt-3" alt="The Name of the Wind" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">The Name of the Wind</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">Patrick Rothfuss</dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A story about a gifted young man and his quest for knowledge. Kvothe recalls his life as a musician and magician.</p>
+                        </details>
+                        <details class="card-text" >
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/NAME-WIND-KINGKILLER-CHRONICLE-BOOK/dp/0575081406?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="https://encrypted-tbn1.gstatic.com/faviconV2?url=http://www.flipkart.com&client=SHOPPING&size=32&type=FAVICON&fallback_opts=TYPE,SIZE,URL" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 7 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT_5nf5iVVvUQyug4MXO_a1339IwcRWxJKCf5fXjztwMkhTjEAVtb58ivIhA_znBEM5xUhcCgfn-pvfIMKjQq2D-1UZbTppsKVvLLyXUmc" class="card-img mt-3" alt="The Lies of Locke Lamora" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">The Lies of Locke Lamora</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">Scott Lynch </dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A tale of a master thief in a corrupt city. Locke and his band of thieves face betrayal and deadly enemies.</p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="http://www.flipkart.com/lies-locke-lamora/p/itmfcyvaccpnswuc?pid=9780553588941&lid=LSTBOK9780553588941MTCSRD&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                                <li>
+                                    <a href="https://biblio.co.uk/book/lies-locke-lamora-gentleman-bastard-sequence/d/281450602?aid=frg&srsltid=AfmBOorfxTjolqZzIuToW9-A8c4Ix0WHSRJ9MWaG8mOo88kfQzGPNS1_Vn0" target="_blank"><button class="btn bg-black text-white me-4">Biblio</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 8 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSWkMS9_d4_LwZIfAi9f5DcqTWUO3MG04axrBG1rGIeuLfI0dsZMVDlAJj5Mh2TWSoqoxTruINNBfifDSF8ce3w_AOjCAIg-WMV-c6-HTGkUquy7RjiOpJW" class="card-img mt-3" alt="Eragon" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">Eragon</h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8"> Christopher Paolini</dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;" >
+                            <summary>Overview:</summary>
+                            <p class="ps-4"> A young farm boy discovers he is destined to be a dragon rider. Eragon trains to defeat the evil king Galbatorix.</p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/Eragon-Book-Illustrated-Inheritance-Cycle/dp/0241681510?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3H3WE9M6NY1KV" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipkart.com/eragon/p/itmfc8q3efstz8dd?pid=9780241681510&lid=LSTBOK9780241681510I9G4HE&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 9 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ4cPqSy7A-15aTsRnZ9jpwoaWiqlsJ8xTd8bbTCUlumqxbiiE56fFSuJvoPVA_NAfFV07nJ6Sw08zwhAiohHDugVXIgDgDTlPVK5sMheI" class="card-img mt-3" alt="The Priory of the Orange Tree" id="bookImg">
+                    <div class="card-body">
+                        <h5 class="card-title h4">The Priory of the Orange Tree </h5>
+                        <dl class="card-text d-flex flex-row">
+                            <dt class="col-4">Author:</dt>
+                            <dd class="col-8">Samantha Shannon </dd>
+                        </dl>
+                        <details class="card-text" style="margin-top:-15px ;">
+                            <summary>Overview:</summary>
+                            <p class="ps-4">A tale of dragons, magic, and political intrigue. A divided world faces the return of an ancient threat.</p>
+                        </details>
+                        <details class="card-text">
+                            <summary>Purchase Link:</summary>
+                            <ul class="d-flex pt-3 ps-0" style="list-style: none;">
+                                <li>
+                                    <a href="https://www.amazon.in/Priory-Orange-Tree-Samantha-Shannon/dp/1526648717?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3H3WE9M6NY1KV" target="_blank"><button class="btn bg-black text-white me-4">Amazon</button></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.flipkart.com/priory-orange-tree/p/itmf5yx6naqqk2k6?pid=9781526648716&lid=LSTBOK9781526648716QVQ93Q&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc" target="_blank"><button class="btn bg-black text-white me-4">Flipkart</button></a>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback form -->
+    <div id="feedbackForm" style="height: 20vh;"></div>
+    <div>
+      <h3 class="mb-4 text-center text-white h2">Feedback Form</h3>
+      <div class=" w-100 d-flex justify-content-center mb-3">
+        <form class="w-75 border border-4 p-3 pt-4 rounded rounded-4 bg-body-secondary mb-5">
+              <label class="fw-bold" for="name">Name</label>
+              <input type="text" name="Name" id="name" required class="form-control">
+              <label class="fw-bold" for="name">Book Name</label>
+              <input type="text" name="Name" id="name" required class="form-control">
+              <label class="fw-bold" for="Feedback">Feedback</label>
+              <textarea name="Feedback" id="Feedback" class="form-control"></textarea>
+              <button type="submit" class="btn btn-primary mt-3 w-100">Submit Feedback</button>
+          </form>
+      </div>  
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-2 mb-1">
+        © 2025 Book Showcase | All rights reserved
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
