@@ -25,11 +25,11 @@
             text-align: center;
         }
         
-        /* Added rotation effect styles using IDs */
+        /* Added rotation effect styles*/
         #imgContainer {
             height: 350px;
             width: 300px;
-            perspective: 1000px;
+            perspective: 1000px; /* Add perspective for 3D effect */
             border: 4px solid white;
             border-radius: 0.25rem;
             position: relative;
@@ -41,7 +41,7 @@
             width: 100%;
             height: 100%;
             transition: transform 1s;
-            transform-style: preserve-3d;
+            transform-style: preserve-3d; /* Preserve 3D transformations */
         }
         #imgContainer:hover #book-card {
             transform: rotateY(180deg);
@@ -50,7 +50,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            backface-visibility: hidden;
+            backface-visibility: hidden; /* Hide the back face when rotated */
         }
         #book-front {
             z-index: 2;
@@ -83,7 +83,12 @@
             top:0;
             left: 0;
         }
-       
+       #button{
+            color: white;
+       }
+       #button:hover{
+        color: black;
+       }
     </style>
 </head>
 <body class="container-fluid p-0 m-0">
@@ -117,7 +122,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-secondary text-black fs-4 fw-bold w-25 h-100" type="button">Science Fiction</button></figcaption>
+                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-secondary fs-4 fw-bold w-25 h-100" type="button" id="button">Science Fiction</button></figcaption>
                                 </figure>
                             </a>
                         </div>
@@ -135,11 +140,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-danger text-black fs-4 fw-bold w-25 h-100" type="button">Fantasy</button></figcaption>
+                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-danger fs-4 fw-bold w-25 h-100" type="button" id="button">Fantasy</button></figcaption>
                                 </figure>
                             </a>
                         </div>
-
+                        <!-- mystery -->
                         <div class="carousel-item pt-5">
                             <a href="mystery.htm">
                                 <figure>
@@ -153,11 +158,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-warning text-black fs-4 fw-bold w-25 h-100" type="button">Mystery</button></figcaption>
+                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-warning fs-4 fw-bold w-25 h-100" type="button" id="button">Mystery</button></figcaption>
                                 </figure>
                             </a>
                         </div>
-                        
+                        <!-- fiction -->
                         <div class="carousel-item pt-5">
                             <a href="fiction.htm">
                                 <figure>
@@ -171,11 +176,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-primary text-black fs-4 fw-bold w-25 h-100" type="button">Fiction</button></figcaption>
+                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-primary text-black fs-4 fw-bold w-25 h-100" type="button" id="button">Fiction</button></figcaption>
                                 </figure>
                             </a>
                         </div>
-                        
+                        <!-- action -->
                         <div class="carousel-item pt-5">
                             <a href="action.htm">
                                 <figure>
@@ -189,7 +194,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-light text-black fs-4 fw-bold w-25 h-100" type="button">Action</button></figcaption>
+                                    <figcaption class="text-center mt-2"><button class="btn btn-outline-light fs-4 fw-bold w-25 h-100" type="button" id="button">Action</button></figcaption>
                                 </figure>
                             </a>
                         </div>
