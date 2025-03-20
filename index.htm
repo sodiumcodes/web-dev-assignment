@@ -13,28 +13,31 @@
         body {
             overflow-x: hidden;
         }
-        #slider-track{
-            background: linear-gradient(45deg, #92ffb1, #6392ff, #b392ff);
-            height: 100%;
-            width: 100%;
-            background-size: 200% 200%;
-            position: fixed;
-            background-attachment: fixed; 
-            display: flex;
-            flex-direction: column;
-            z-index: -1;
-            top:0;
-            left: 0;
-            animation: scroll 12s linear infinite;
-        }
-        @keyframes scroll {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-100%);
-            }
-        }
+        #bgColor{
+             background: linear-gradient(45deg, #92ffb1, #6392ff, #b392ff);
+             height: 100%;
+             width: 100%;
+             background-size: 200% 200%;
+             position: fixed;
+             background-attachment: fixed; 
+             z-index: -1;
+             top:0;
+             left: 0;
+             animation: color 8s ease-in-out infinite;
+         }
+         @keyframes color {
+             0% {
+                 background-position: 0 50%;
+             }
+ 
+             50% {
+                 background-position: 100% 50%;
+             }
+ 
+             100% {
+                 background-position: 0 50%;
+             }
+         }
         #genre-section {
             display: flex;
             justify-content: center;
@@ -161,39 +164,10 @@
 </head>
 <body class="container-fluid p-0 m-0">
     <!-- Background Color -->
-    
+    <div id="bgColor"></div>
         <!-- Header -->
     <h2 id="landingPage" class="mt-1 mb-0 py-2 text-center bg-dark text-white">Welcome to Book Showcase</h2>
-    <div id="slider-container d-flex">
-        <div class="slider-track">
-            <div class="slider-item">
-                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQwAPnYyyw_M431ivvRjpbD_pU-5Eo73S7XsMXo8IdV2qLz71plkbwPkj_J7zZ4eW38eDVwX8GkJJ7TNE0PYYaEJL80esLP7KBz5mfPtVnDVGVF04uPLFvswg" alt="Killing Floor Book">
-            </div>
-            <div class="slider-item">
-                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546455702i/43444769.jpg" alt="Point of Impact Book">
-            </div>
-            <div class="slider-item">
-                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSTp0eonhXHsxtjNJncJcHPPI6vZ2FwpAEslcNFt_s9MBqlOggbkcY1J3MvAWN6-GxWqM955WtKTVUr25Q7FOrvebvpbgwEW9WdYn_eld0V" alt="Die Trying Book">
-            </div>
-            <div class="slider-item">
-                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ_aUIh-bsEc6X09V61I56f2nMIWbEYLD7s9CjDjrMM9_1GUYKI6kPy2-EN53gElcJuQKkYSBqtqaO9eemxo62p2_DcKiu-pO1a0Ilq3mIS" alt="The Bourne Identity Book">
-            </div>
-            <div class="slider-item">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRipny9wG2zgA8KY6pzxF1es-Pfipo71pLx6TDPBiaUv6b_991FUtHVNPHewSGlkbU0VK09q6-4MOJAcdl7ZfcBz9COMY_W09rN84aEVnw" alt="Without Remorse Book">
-            </div>
-
-            <!-- Clone the items for smooth infinite scroll -->
-            <div class="slider-item">
-                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQwAPnYyyw_M431ivvRjpbD_pU-5Eo73S7XsMXo8IdV2qLz71plkbwPkj_J7zZ4eW38eDVwX8GkJJ7TNE0PYYaEJL80esLP7KBz5mfPtVnDVGVF04uPLFvswg" alt="Killing Floor Book">
-            </div>
-            <div class="slider-item">
-                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546455702i/43444769.jpg" alt="Point of Impact Book">
-            </div>
-            <div class="slider-item">
-                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSTp0eonhXHsxtjNJncJcHPPI6vZ2FwpAEslcNFt_s9MBqlOggbkcY1J3MvAWN6-GxWqM955WtKTVUr25Q7FOrvebvpbgwEW9WdYn_eld0V" alt="Die Trying Book">
-            </div>
-        </div>
-    </div>
+    
     <!-- Genre Section -->
             <div id="genre-section" style="height: 90vh;" >
                 <div id="genre-button" class="d-grid col-6 mx-auto">
