@@ -38,11 +38,6 @@
                 background-position: 0 50%;
             }
         }
-        .carousel-inner{
-            height: 90vh;
-            width: 97vw;
-        }
-        
         #genre-section {
             display: flex;
             justify-content: center;
@@ -52,52 +47,6 @@
         #genre-button {
             text-align: center;
         }
-        
-        /* Added rotation effect styles*/
-        #imgContainer {
-            /* height: 350px;
-            width: 300px; */
-            perspective: 1000px; /* Add perspective for 3D effect */
-            border: 4px solid white;
-            border-radius: 0.25rem;
-            position: relative;
-            margin: auto;
-            padding: 0.5rem;
-        }
-        #book-card {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transition: transform 1s;
-            transform-style: preserve-3d; /* Preserve 3D transformations */
-        }
-        #imgContainer:hover #book-card {
-            transform: rotateY(180deg);
-        }
-        #book-front, #book-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden; /* Hide the back face when rotated */
-        }
-        #book-front {
-            z-index: 2;
-        }
-        #book-back {
-            transform: rotateY(180deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 10px; 
-        }
-       #button{
-            color: white;
-       }
-       #button:hover{
-        color: black;
-       }
-       
         /* Responsive Adjustments */
 
         /* when max width is less than or equal to 400px  */
@@ -109,33 +58,10 @@
                 padding: 2px;   
             }
 
-            #imgContainer {
-                object-fit: fill;
-                /* height: 100%; */
-                height: 300px;
-                max-width: 270px;
-                margin-top:22px;
-            }
-
-            #book-back {
-                font-size: 200%;
-            }
             #genre_btn{
                 width: 150px;
                 height: 80px;
                 font-size: 190%;
-            }
-            #button {
-                font-size: 150%;
-                width: 100%;
-                max-width: 250px;
-            }
-            #book-img {
-                height: 100%;
-                width: inherit;
-                object-fit:cover;
-                max-height: 700px;
-                max-width: 300px;     
             }
         }
         
@@ -148,32 +74,10 @@
                 height: 500px;
                 padding: 2px;   
             }
-
-            #imgContainer {
-                object-fit: fill;
-                height: 400px;
-                max-width: 300px;
-                margin-top:40px;
-            }
-            #book-back {
-                font-size: 200%;
-            }
             #genre_btn{
                 width: 150px;
                 height: 80px;
                 font-size: 190%;
-            }
-            #button {
-                font-size: 150%;
-                width: 100%;
-                max-width: 250px;
-            }
-            #book-img {
-                height: 100%;
-                width: inherit;
-                object-fit:cover;
-                max-height: 400px;
-                max-width: 300px;     
             }
         }
         /* done */
@@ -184,32 +88,10 @@
                 padding: 2px;   
             }
 
-            #imgContainer {
-                object-fit: fill;
-                height: 170px;
-                max-height: 140px;
-                max-width: 250px;
-                margin-top:40px;
-            }
-            #book-back {
-                font-size: 200%;
-            }
             #genre_btn{
                 width: 100px;
                 height: 50px;
                 font-size: 150%;
-            }
-            #button {
-                font-size: 150%;
-                width: 100%;
-                max-width: 250px;
-            }
-            #book-img {
-                height: 100%;
-                width: inherit;
-                object-fit:cover;
-                max-height: 140px;
-                max-width: 250px;     
             }
         }
 
@@ -222,36 +104,13 @@
                 padding: 2px;   
             }
 
-            #imgContainer {
-                object-fit: fill;
-                height: 500px;
-                width: 600px;
-                max-height: 200px;
-                max-width: 300px; 
-                margin-top:30px;
-            }
-            #book-back {
-                font-size: 200%;
-            }
+              
             #genre_btn{
                 width: 200px;
                 height: 50px;
                 font-size: 150%;
             }
-            #button {
-                text-align: center;
-                font-size: 150%;
-                width: 100%;
-                height: 50px;
-                max-width: 300px;
-            }
-            #book-img {
-                height: 100%;
-                width: inherit;
-                object-fit:cover;
-                max-height: 300px;
-                max-width: 600px;     
-            }
+            
         }
         /* portrait */
         /* done */
@@ -262,36 +121,12 @@
                 padding: 2px;   
             }
 
-            #imgContainer {
-                object-fit: fill;
-                height: 600px;
-                width: 600px;
-                max-height: 1200px;
-                max-width: 1200px; 
-                margin-top:70px;
-            }
-            #book-back {
-                font-size: 200%;
-            }
             #genre_btn{
                 width: 300px;
                 height: 100px;
                 font-size: 200%;
             }
-            #button {
-                text-align: center;
-                font-size: 190%;
-                width: 100%;
-                height: 80px;
-                max-width: 600px;
-            }
-            #book-img {
-                height: 100%;
-                width: inherit;
-                object-fit:cover;
-                max-height: 1200px;
-                max-width: 1200px;     
-            }
+            
         }
         /* when max width is more than 1000px*/
         /* landscape */
@@ -301,37 +136,12 @@
                 height: 550px;
                 padding: 2px;   
             }
-
-            #imgContainer {
-                object-fit: fill;
-                height: 400px;
-                width: 500px;
-                max-height: 1000px;
-                max-width: 1200px; 
-                margin-top:30px;
-            }
-            #book-back {
-                font-size: 200%;
-            }
             #genre_btn{
                 width: 250px;
                 height: 80px;
                 font-size: 200%;
             }
-            #button {
-                text-align: center;
-                font-size: 190%;
-                width: 100%;
-                height: 80px;
-                max-width: 500px;
-            }
-            #book-img {
-                height: 100%;
-                width: inherit;
-                object-fit:cover;
-                max-height: 1000px;
-                max-width: 1200px;     
-            }
+            
         }
         /* portrait */
         /* done */
@@ -342,36 +152,12 @@
                 padding: 2px;   
             }
 
-            #imgContainer {
-                object-fit: fill;
-                height: 600px;
-                width: 600px;
-                max-height: 1200px;
-                max-width: 1200px; 
-                margin-top:40px;
-            }
-            #book-back {
-                font-size: 200%;
-            }
             #genre_btn{
                 width: 300px;
                 height: 100px;
                 font-size: 200%;
             }
-            #button {
-                text-align: center;
-                font-size: 190%;
-                width: 100%;
-                height: 80px;
-                max-width: 600px;
-            }
-            #book-img {
-                height: 100%;
-                width: inherit;
-                object-fit:cover;
-                max-height: 1200px;
-                max-width: 1200px;     
-            }
+            
         }
     </style>
 </head>
@@ -384,114 +170,12 @@
     <!-- Genre Section -->
             <div id="genre-section" style="height: 90vh;" >
                 <div id="genre-button" class="d-grid col-6 mx-auto">
-                    <a href="#genre">
+                    <a href=".\genrePage.htm">
                         <button class="btn btn-dark text-white fw-bold" type="button" id="genre_btn">Genre</button>
                     </a>
                 </div>
             </div>
-            <div id="genre">   
-                <div id="book-genre" class="carousel slide">
-                    <!-- sci-fi -->
-                    <div class="carousel-inner" >
-                        <div class="carousel-item active">
-                            <a href="sci-fi.htm">
-                                <figure>
-                                    <div id="imgContainer">
-                                        <div id="book-card">
-                                            <div id="book-front">
-                                                <img src="https://img.freepik.com/premium-photo/city-skyline-with-city-skyline-background_1250067-796.jpg" id="book-img" alt="Science Fiction">
-                                            </div>
-                                            <div id="book-back" style="background-color: rgb(194, 129, 255);">
-                                                <span class="text-black">Click for Details</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figcaption class="text-center my-2"><button class="btn btn-outline-secondary " type="button" id="button">Sci-fi</button></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        
-                      <!-- Fantasy-->
-                        <div class="carousel-item">
-                            <a href="fantasy.htm">
-                                <figure>
-                                    <div id="imgContainer">
-                                        <div id="book-card">
-                                            <div id="book-front">
-                                                <img src="https://wallpaperset.com/w/full/f/5/2/435823.jpg" id="book-img" alt="Fantasy">
-                                            </div>
-                                            <div id="book-back" style="background-color: rgb(255, 131, 131);">
-                                                <span class="text-black">Click for Details</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figcaption class="text-center my-2"><button class="btn btn-outline-danger" type="button" id="button">Fantasy</button></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- mystery -->
-                        <div class="carousel-item ">
-                            <a href="mystery.htm">
-                                <figure>
-                                    <div id="imgContainer">
-                                        <div id="book-card">
-                                            <div id="book-front">
-                                                <img src="https://img.freepik.com/premium-photo/dimly-lit-cluttered-detectiveis-office-with-maps-photos-notes-pinned-wall-evoking-mystery-investigation_95891-134519.jpg" id="book-img" alt="Mystery">
-                                            </div>
-                                            <div id="book-back" style="background-color: rgb(255, 226, 82);">
-                                                <span class=" text-black">Click for Details</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figcaption class="text-center my-2"><button class="btn btn-outline-warning " type="button" id="button">Mystery</button></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- fiction -->
-                        <div class="carousel-item">
-                            <a href="fiction.htm">
-                                <figure>
-                                    <div id="imgContainer">
-                                        <div id="book-card">
-                                            <div id="book-front" >
-                                                <img src="https://w0.peakpx.com/wallpaper/807/420/HD-wallpaper-dark-academia-harry-potter-dark-academia-aesthetic.jpg" id="book-img" alt="Fiction">
-                                            </div>
-                                            <div id="book-back" style="background-color: rgb(167, 115, 82);">
-                                                <span class=" text-black">Click for Details</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figcaption class="text-center my-2"><button class="btn btn-outline-primary " type="button" id="button">Fiction</button></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <!-- action -->
-                        <div class="carousel-item">
-                            <a href="action.htm">
-                                <figure>
-                                    <div id="imgContainer">
-                                        <div id="book-card">
-                                            <div id="book-front">
-                                                <img src="https://m.media-amazon.com/images/M/MV5BNWRmYzgyNzAtMWE5Yy00MGUwLWJmNWYtZjYxZjFmOWNkZDkxXkEyXkFqcGc@._V1_.jpg" id="book-img" alt="Action">
-                                            </div>
-                                            <div id="book-back" style="background-color: rgb(248, 248, 248);">
-                                                <span class=" text-black">Click for Details</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <figcaption class="text-center my-2"><button class="btn btn-outline-light" type="button" id="button">Action</button></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#book-genre" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#book-genre" data-bs-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                    </button>
-                  </div>
-            </div>
+           
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-2">
         © 2025 Book Showcase | All rights reserved
